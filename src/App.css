@@ -1,38 +1,301 @@
-.App {
+.SaarangLogo {
+  padding: 2vw;
+  padding-left: 5vw;
+}
+.img-logo {
+  width: 8vw;
+  height: 8vw;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+.nav-links {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.link {
+  font-size: 2vw;
+  text-decoration: none;
+  color: aliceblue;
+}
+.link:hover{
+  font-weight: bold;
+}
+.left-boxes {
+  position: absolute;
+  top: 12vw;
+}
+.solid-box {
+  background-color: #80307d;
+  width: 20vw;
+  height: 20vw;
+  border-bottom-right-radius: 2vw;
+  border-top-right-radius: 15%;
+}
+
+.opaque-box {
+  background-color: rgba(109, 27, 106, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 2vw;
+  margin-left: 8vw;
+  width: 15vw;
+  height: 15vw;
+  position: absolute;
+  top: 10vw;
+}
+
+.container {
+  display: flex;
+  flex: auto ;
+  flex-direction: column;
+  background-image: linear-gradient(-225deg, #230a3c, #9a34b2);
+  border-bottom-left-radius: 5vw;
+  padding-bottom: 10%;
+  margin-bottom: 10%;
+}
+.reg-container {
+  padding: 5%;
+  padding-top: 15%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+.reg-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 80%;
+}
+.reg-heading {
+  width: 60%;
+}
+.reg-Title {
+  font-family: Verdana;
+  font-size: 2.25vw;
+  color: aliceblue;
+  overflow: hidden;
+}
+.reg-button {
+  font-size: 1vw;
+  margin-right: 0%;
+  border: none;
+  white-space: nowrap;
+  background-image: linear-gradient(45deg, #b57170, #f8ccc6);
+  padding: 2% 20%;
   text-align: center;
+  color: white;
+  border-radius: 40px;
+}
+.reg-button:hover {
+  background-image: linear-gradient(180deg, #b57170, #f8ccc6);
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button:focus {
+  outline: 0;
+}
+.login {
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.aboutus-container {
+  padding: 20%;
+  padding-top: 10%;
+  padding-bottom: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.aboutus {
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.begin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+  padding-top: 0%;
+}
+.begin-title {
+  font-size: 5vw;
+  text-align: center;
+}
+.content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+
+.announcements-container {
+  padding: 5%;
+}
+.announcements-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4c6c6;
+  border-radius: 2vw;
+  padding: 5%;
+}
+.announcements-title {
+  font-size: 3vw;
+  padding: 2%;
+  padding-top: 0%;
+}
+.statement{
+  font-size: 1vw;
+}
+.why-container {
+  display: flex;
+  padding: 10%;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(-225deg, #123b45, #3494a7);
+  align-items: center;
+}
+.why-title {
+  padding: 2%;
+  font-size: 3.5vw;
+  color: white;
+  white-space: nowrap;
+}
+
+.sub-container {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  width: 70%;
+}
+.detail-container {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.title-detail-container {
+  font-size: 2.5vw;
+  color: white;
+  white-space: nowrap;
+}
+
+.point {
+  color: white;
+  font-size: 1vw;
+}
+.why-button {
+  border: 2px solid white;
+  padding: 1% 3%;
+  text-align: center;
+  color: white;
+  background: transparent;
+  border-radius: 40px;
+}
+.why-button:hover{
+  background-color: gainsboro;
+  font-weight: bold;
+}
+
+.resp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+}
+.resp-title-box {
+  padding: 5%;
+}
+.resp-title {
+  font-size: 3vw;
+  font-weight: bold;
+}
+.resp-card {
+  padding: 5% 5%;
+  width: 15%;
+  border-radius: 15%;
+  background-color: #67189e;
+}
+.resp-card-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.card-title {
+  color: white;
+  text-align: center;
+  font-size: 2vw;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.card-desp {
+  color: white;
+  font-size: 1.5vw;
+}
+.content {
+  font-size: 1vw;
+}
+.content-button {
+  font-size: 1.5vw;
+  margin-right: 0%;
+  border: none;
+  white-space: nowrap;
+  background-image: linear-gradient(-225deg, #230a3c, #9a34b2);
+  padding: 1% 10%;
+  text-align: center;
+  color: white;
+  border-radius: 40px;
+}
+.content-button:hover{
+  font-weight: bold;
+  background-image: linear-gradient(180deg, #230a3c, #9a34b2);
+}
+.let-container{
+  display: flex;
+  background-image: linear-gradient(-225deg, #230a3c, #9a34b2);
+  flex-direction: row;
+  justify-content: space-between;
+}
+.info-box{
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+.info-title{
+  font-size: 3.5vw;
+  color: white;
+  padding-bottom: 2%;
+}
+.info-desp{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.icon-container{
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  padding: 5%;
+  padding-right: 10%;
+  justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon{
+  
+  width: 3vw;
+  height: 3vw;
+  padding: 10px;
+  border-radius: 100%;
+  background-color: white;
+}
+.icon-box{
+  padding: 10%;
 }
