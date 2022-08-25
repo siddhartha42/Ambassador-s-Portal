@@ -258,6 +258,7 @@ button:focus {
   flex-direction: column;
   align-items: center;
   padding-bottom: 10%;
+  padding-left: 10%;
 }
 .resp-title-box {
   padding: 5%;
