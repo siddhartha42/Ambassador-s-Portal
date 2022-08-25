@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { ReactComponent as FacebookLogo } from "./facebook.svg";
 
 const App: React.FC = () => {
+  const [saarang, setHome_url] = useState("#");
+  useEffect(() => {
+    document.title = "Saarang";
+  });
   return (
     <div className="App">
       <nav className="navbar">
@@ -61,6 +65,7 @@ const App: React.FC = () => {
           fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
           sequi nesciunt. Neque porro quisquam est.
         </p>
+        <hr style={{ width: "40%" }}></hr>
         <p className="statement">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -90,7 +95,10 @@ const App: React.FC = () => {
         </div>
       </div>
       <div className="why-container">
-        <a className="why-title">Why be a Saarang Ambassador?</a>
+        <a className="why-title">
+          Why be a Saarang Ambassador?
+          <hr style={{backgroundColor: "white", width:"20%" ,float:"right", height:"0.07vw"}}></hr>
+        </a>
         <div className="sub-container">
           <div className="detail-container">
             <a className="title-detail-container">Increase your skill set</a>
@@ -147,6 +155,9 @@ const App: React.FC = () => {
           <a className="why-button-text">Register Now</a>
         </button>
       </div>
+      <div className="design-box-top">
+        <div className="design-box-over-top"></div>
+      </div>
       <div className="resp-container">
         <div className="resp-title-box">
           <p className="resp-title">Responsibilities of an ambassador</p>
@@ -155,7 +166,7 @@ const App: React.FC = () => {
           <div className="resp-card">
             <div className="card-icon"></div>
             <div className="card-title">PUBLICITY</div>
-            <hr></hr>
+            <hr style={{ backgroundColor: "white" }}></hr>
             <div className="card-desp">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's
@@ -164,7 +175,7 @@ const App: React.FC = () => {
           <div className="resp-card">
             <div className="card-icon"></div>
             <div className="card-title">SOCIAL MEDIA</div>
-            <hr></hr>
+            <hr style={{ backgroundColor: "white" }}></hr>
             <div className="card-desp">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's
@@ -173,7 +184,7 @@ const App: React.FC = () => {
           <div className="resp-card">
             <div className="card-icon"></div>
             <div className="card-title">ORGANIZING</div>
-            <hr></hr>
+            <hr style={{ backgroundColor: "white" }}></hr>
             <div className="card-desp">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's
@@ -182,13 +193,17 @@ const App: React.FC = () => {
         </div>
       </div>
 
+      <div className="design-box-bottom">
+        <div className="design-box-over-bottom"></div>
+      </div>
+
       <div className="begin-container">
         <a className="begin-title">BEGIN YOUR JOURNEY AT SAARANG</a>
         <div className="content-box">
           <a className="content">Explore opportunities</a>
-          <hr></hr>
+          <hr style={{ width: "20%" }}></hr>
           <a className="content">Build Connections</a>
-          <hr></hr>
+          <hr style={{ width: "20%" }}></hr>
           <a className="content">Stand out from the crowd</a>
         </div>
         <button className="content-button">

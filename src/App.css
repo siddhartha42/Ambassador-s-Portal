@@ -25,7 +25,7 @@
   text-decoration: none;
   color: aliceblue;
 }
-.link:hover{
+.link:hover {
   font-weight: bold;
 }
 .left-boxes {
@@ -53,12 +53,13 @@
 
 .container {
   display: flex;
-  flex: auto ;
+  flex: auto;
   flex-direction: column;
   background-image: linear-gradient(-225deg, #230a3c, #9a34b2);
   border-bottom-left-radius: 5vw;
   padding-bottom: 15%;
   margin-bottom: 10%;
+  max-height: 95vh;
 }
 .reg-container {
   padding: 5%;
@@ -78,10 +79,11 @@
   width: 60%;
 }
 .reg-Title {
-  font-family: Verdana;
+  font-family: Sidecar_Sans_4;
   font-size: 2.25vw;
   color: aliceblue;
   overflow: hidden;
+  src: url("./Sidecar/Sidecar/Sidecar_Sans_4.otf") format("opentype");
 }
 .reg-button {
   font-size: 1vw;
@@ -128,6 +130,7 @@ button:focus {
   align-items: center;
   padding: 10%;
   padding-top: 0%;
+  padding-left: 5%;
 }
 .begin-title {
   font-size: 5vw;
@@ -157,12 +160,13 @@ button:focus {
   padding: 2%;
   padding-top: 0%;
 }
-.statement{
+.statement {
   font-size: 1vw;
 }
 .why-container {
   display: flex;
   padding: 10%;
+
   flex-direction: column;
   justify-content: center;
   background-image: linear-gradient(-225deg, #123b45, #3494a7);
@@ -203,17 +207,57 @@ button:focus {
   background: transparent;
   border-radius: 40px;
 }
-.why-button:hover{
+.why-button:hover {
   background-color: gainsboro;
   font-weight: bold;
+}
+
+.design-box-top {
+  width: 8.5vw;
+  height: 18vw;
+  background-color: aqua;
+  float: right;
+  margin-top: -7vw;
+  opacity: 0.5;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+}
+.design-box-over-top {
+  width: 13vw;
+  height: 13vw;
+  float: left;
+  margin-left: -8vw;
+  margin-top: 10vw;
+  background-color: #b57170;
+  opacity: 0.8;
+
+  border-radius: 2vw;
+}
+
+.design-box-bottom {
+  width: 7vw;
+  height: 15vw;
+  background-color: aqua;
+  float: left;
+  opacity: 0.7;
+  border-top-right-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+}
+.design-box-over-bottom {
+  width: 12vw;
+  height: 12vw;
+  margin-top: 6vw;
+  margin-left: -3vw;
+  background-color:#5c8088;
+  opacity: 0.8;
+  border-radius: 2vw;
 }
 
 .resp-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10%;
-  padding-top: 0%;
+  padding-bottom: 10%;
 }
 .resp-title-box {
   padding: 5%;
@@ -258,30 +302,30 @@ button:focus {
   color: white;
   border-radius: 40px;
 }
-.content-button:hover{
+.content-button:hover {
   font-weight: bold;
   background-image: linear-gradient(180deg, #230a3c, #9a34b2);
 }
-.let-container{
+.let-container {
   display: flex;
   background-image: linear-gradient(-225deg, #230a3c, #9a34b2);
   flex-direction: row;
   justify-content: space-between;
 }
-.info-box{
+.info-box {
   display: flex;
   flex-direction: column;
   padding: 5%;
 }
-.info-title{
+.info-title {
   font-size: 3.5vw;
   color: white;
   padding-bottom: 2%;
 }
-.info-desp{
+.info-desp {
   color: white;
 }
-.icon-container{
+.icon-container {
   display: flex;
   flex-direction: row;
   width: fit-content;
@@ -289,14 +333,23 @@ button:focus {
   padding-right: 10%;
   justify-content: center;
 }
-.icon{
-  
+.icon {
   width: 3vw;
   height: 3vw;
   padding: 10px;
   border-radius: 100%;
   background-color: white;
 }
-.icon-box{
+.icon-box {
   padding: 10%;
+}
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: black;
+  height: 0.05vw;
+  padding-left: 20%;
+  padding-left: 20%;
 }
